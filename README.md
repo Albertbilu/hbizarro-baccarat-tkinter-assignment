@@ -12,6 +12,10 @@ curious about how to make a GUI. I thought it would be fun to make a
 a casino game. I chose Baccarat because it is simple to understand, but the
 actual game has interesting rules and logic.
 
+## Setup
+
+Use python >= 3.11, and have Tkinter available.
+
 ## My implementation
 
 I have implemented the game logic in the `baccarat` module.
