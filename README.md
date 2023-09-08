@@ -16,6 +16,12 @@ actual game has interesting rules and logic.
 
 Use python >= 3.11, and have Tkinter available.
 
+For running tests:
+
+```bash
+pip install pytest
+python -m pytest
+```
 ## My implementation
 
 I have implemented the game logic in the `baccarat` module.
