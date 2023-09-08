@@ -182,7 +182,22 @@ class BaccaratTable:
     @property
     def result_counts(self) -> dict[BetResult, int]:
         """The number of times each bet type has won."""
-        return Counter(self.results)
+
+        counts = Counter(self.results)
+
+        return {
+            BetResult.PLAYER: counts.get(BetResult.PLAYER, 0),
+            BetResult.BANKER: counts.get(BetResult.BANKER, 0),
+            BetResult.TIE: counts.get(BetResult.TIE, 0),
+        }
+
+    @property
+    def last_result(self) -> BetResult | None:
+        """The result of the last game played."""
+        if len(self.results) == 0:
+            return None
+
+        return self.results[-1]
 
     def seat_player(self, player: Player) -> None:
         """Seat a player at the table.

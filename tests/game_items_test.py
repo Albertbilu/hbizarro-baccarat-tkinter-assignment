@@ -40,12 +40,19 @@ def test_card(card):
 def test_shoe(shoe):
     """Test the shoe class."""
     assert shoe.num_cards == 52
+    assert shoe.num_decks == 1
 
     shoe.shuffle()
     assert shoe.num_cards == 52
+    assert len(shoe.discards) == 0
 
     shoe.deal()
     assert shoe.num_cards == 51
+    assert len(shoe.discards) == 1
+
+    shoe.reset()
+    assert shoe.num_cards == 52
+    assert len(shoe.discards) == 0
 
 
 def test_hand(hand):

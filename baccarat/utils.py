@@ -116,13 +116,3 @@ def create_card(value: int | str, suit: str) -> Card:
     suit_ = Suit(suit)
 
     return Card(value_, suit_)
-
-
-def value_range(from_value: int, to_value: int) -> list[Value]:
-    """Get a range of values as a list of Value enums.
-
-    :param from_value: The starting value
-    :param to_value: The ending value
-    :return: A list of Value enums
-    """
-    return [Value(value) for value in range(from_value, to_value + 1)]

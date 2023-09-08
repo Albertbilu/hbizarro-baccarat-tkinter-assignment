@@ -1,6 +1,7 @@
 import pytest
 
 from baccarat.game import BetResult
+from baccarat.game import NotEnoughMoneyError
 from baccarat.game import Player
 
 
@@ -21,7 +22,7 @@ def test_player_make_bet(player):
 
 
 def test_player_make_bet_invalid_amount(player):
-    with pytest.raises(ValueError):
+    with pytest.raises(NotEnoughMoneyError):
         player.make_bet(101, BetResult.PLAYER)
 
 

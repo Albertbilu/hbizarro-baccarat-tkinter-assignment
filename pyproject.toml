@@ -12,4 +12,4 @@ no_implicit_optional = true
 warn_redundant_casts = true
 warn_unused_ignores = true
 warn_return_any = true
-exclude = ["tests", "docs", "venv"]
+exclude = ["tests", "docs", "venv", "stub.py", "play_gui.py"]
