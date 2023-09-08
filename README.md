@@ -1,6 +1,9 @@
+
 # Baccarat Game with Tkinter GUI
 
 This is an educational project to learn Python and Tkinter.
+
+![Example of game play](https://github.com/mbmackenzie/baccarat-tkinter-assignment/assets/52085111/d52d793b-4736-46b0-b9f6-f924f52300e5)
 
 ## Motivation
 
