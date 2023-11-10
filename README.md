@@ -35,3 +35,9 @@ play the game with a GUI by running `python play_gui.py`.
 I took my implementation and removed all the code. I left the docstrings and
 the function signatures, see [stub.py](stub.py). I also left the tests (95% coverage). The assignment is to implement
 the game logic and the GUI.
+
+```
+git clone -b empty https://github.com/mbmackenzie/baccarat-tkinter-assignment.git
+cd baccarat-tkinter-assignment
+git switch -c [YOUR_NAME]
+```
